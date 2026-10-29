@@ -24,3 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="msm8952_64-user 7.1.1 NMF26F eng.maojia.20180610.122353 release-keys"
 
 BUILD_FINGERPRINT := Lenovo/YT-X703L/YT-X703L:7.1.1/S100/YT-X703L_S000973_180524_ROW:user/release-keys
+
+# YTX703L Lite + minimal MindTheGapps
+$(call inherit-product, device/lenovo/YTX703-common/YTX703L/ytx703l-lite.mk)
