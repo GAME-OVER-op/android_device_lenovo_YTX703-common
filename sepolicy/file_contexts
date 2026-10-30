@@ -40,3 +40,6 @@
 # TimeKeep
 /sys/devices/soc\.0/qpnp-rtc-8/rtc/rtc0(/.*)?                           u:object_r:sysfs_rtc:s0
 /(system/vendor|vendor)/bin/timekeep                                    u:object_r:timekeep_exec:s0
+
+# DTS:X Ultra persistent state
+/data/vendor/audio/dts(/.*)?    u:object_r:dtsx_data_file:s0

@@ -1,3 +1,31 @@
+# DTS:X Ultra persistent runtime state.
+type dtsx_data_file, file_type, data_file_type;
+
+# DTS proprietary effect reads and updates its persistent state and
+# per-route tuning cache under /data/vendor/audio/dts.
+allow hal_audio_default dtsx_data_file:dir {
+    open
+    read
+    search
+    getattr
+    write
+    add_name
+    remove_name
+};
+
+allow hal_audio_default dtsx_data_file:file {
+    create
+    open
+    read
+    write
+    append
+    getattr
+    setattr
+    unlink
+    rename
+};
+
+# Existing DTS access requirements.
 allow hal_audio_default vendor_configs_file:file { lock ioctl };
 allow hal_audio_default sysfs_net:dir { open read search getattr };
 allow hal_audio_default sysfs_net:file { open read getattr };
