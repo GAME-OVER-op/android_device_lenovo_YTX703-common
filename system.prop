@@ -160,3 +160,14 @@ net.tcp.buffersize.evdo=4094,87380,524288,4096,16384,262144
 ro.telephony.call_ring.multiple=false
 
 net.tcp.2g_init_rwnd 10
+
+# DTS:X Ultra complete runtime properties
+ro.audio.ignore_effects=false
+ro.dts.licensepath=/vendor/etc/dts/
+ro.dts.cfgpath=/vendor/etc/dts/
+ro.vendor.dts.licensepath=/vendor/etc/dts/
+ro.vendor.dts.cfgpath=/vendor/etc/dts/
+ro.vendor.feature.zte_feature_dts_ultra_enable=true
+vendor.dts.audio.allow_offload=true
+ro.product.lge.globaleffect.dts=false
+ro.lge.globaleffect.dts=false

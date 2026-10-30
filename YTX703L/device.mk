@@ -53,3 +53,6 @@ PRODUCT_PACKAGES += \
 # Do not spin up a separate process for the network stack, use an in-process APK.
 PRODUCT_PACKAGES += InProcessNetworkStack
 PRODUCT_PACKAGES += com.android.tethering.inprocess
+
+# DTS:X Ultra
+$(call inherit-product, vendor/lenovo/YTX703-common/dtsx/dtsx.mk)
